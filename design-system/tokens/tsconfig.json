@@ -1,7 +1,13 @@
 {
   "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "declaration": true,
+    "types": [],
+    "lib": ["ES2021", "DOM"]
+  },
   "files": [],
-  "include": [],
+  "include": ["src/**/*.ts"],
   "references": [
     {
       "path": "./tsconfig.lib.json"
